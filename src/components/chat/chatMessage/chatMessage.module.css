@@ -1,0 +1,71 @@
+.chatmessage {
+  display: flex;
+  gap: 24px;
+  max-width: 60%;
+  margin: 0 auto 0 0;
+}
+.chatmessage_avatar {
+  flex: 0 0 40px;
+  height: 40px;
+}
+.chatmessage_main {
+  display: flex;
+  flex-direction: column;
+}
+.chatmessage_name {
+  color: var(--system-info);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.chatmessage_time {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 16px;
+  margin: 4px 0 0;
+}
+.chatmessage_text {
+  border-radius: 16px 16px 16px 0px;
+  background: var(--bg-block-tertiary);
+  font-size: 17px;
+  padding: 14px;
+}
+
+.chatmessage__currentuser.chatmessage {
+  flex-direction: row-reverse; 
+  margin: 0 0 0 auto;
+}
+
+.chatmessage__currentuser .chatmessage_main {
+  align-items: flex-end;
+}
+
+.chatmessage_additional {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chatmessage__currentuser .chatmessage_text {
+  border-radius: 16px 16px 0px 16px;
+}
+
+.chatmessage__currentuser .chatmessage_delete {
+  width: 13px; 
+  height: 13px;
+  padding: 1px;
+  margin: 0 0 -2px;
+  border-radius: 50%;
+  opacity: 0.6;
+  background: var(--system-info);
+  cursor: pointer;
+}
+
+.chatmessage__currentuser .chatmessage_delete:hover {
+  opacity: 1;
+}
+
+.chatmessage__currentuser .chatmessage_delete img {
+  width: 100%;
+  height: 100%;
+}

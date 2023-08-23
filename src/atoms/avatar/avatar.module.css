@@ -1,0 +1,37 @@
+.avatar {
+  overflow: hidden;
+  border-radius: 999px;
+}
+.avatar_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.avatar__xs {
+  width: 24px;
+  height: 24px;
+  font-size: 8px;
+}
+.avatar__sm {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+}
+.avatar__lg {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.avatar_fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--text-white);
+  background: var(--system-info);  
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+

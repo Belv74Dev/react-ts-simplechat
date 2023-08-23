@@ -1,0 +1,60 @@
+.dialogsitem {
+  padding: 16px 24px;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+}
+.dialogsitem:hover,
+.dialogsitem.dialogsitem__active {
+  background: var(--bg-block-secondary);
+}
+.dialogsitem_avatar {
+  width: 40px;
+}
+.dialogsitem_user {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 163px
+}
+.dialogsitem_user_name {
+  display: block;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.dialogsitem_user_message {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dialogsitem_add {
+  width: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dialogsitem_add_date {
+  color: var(--text-tertiary);
+  text-align: right;
+  font-size: 14px;
+  line-height: 18px;
+}
+.dialogsitem_add_unread {
+  background: var(--system-info);
+  color: var(--text-white);
+  border-radius: 999px;
+  padding: 2px 6px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+}

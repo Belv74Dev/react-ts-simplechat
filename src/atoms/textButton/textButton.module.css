@@ -1,0 +1,13 @@
+.textbutton {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px; 
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
+  color: var(--text-secondary);
+}
+
+.textbutton:hover {
+  border: 1px solid var(--system-info);
+  color: var(--system-info);
+}
